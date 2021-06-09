@@ -25,4 +25,5 @@ def solution(brown, red):
     # print([x1+2, x2+2])
     return [x1+2, x2+2]
 
-solution(24, 24)
+s = solution(24, 24)
+print(s)

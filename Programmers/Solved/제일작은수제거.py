@@ -1,17 +1,18 @@
 def solution(arr):
     min_num = 999999999
     for a in arr:
-        if min_num < a:
+        if min_num >= a:
             min_num = a
 
+    answer = []
     for a in arr:
-        if a == min_num:
-            arr.pop(a)
+        if a != min_num:
+            answer.append(a)
 
-    if arr == []:
+    if answer == []:
         return [-1]
     else:
-        return list(reversed(arr))
+        return answer
 
 arr = [4,3,2,1]
 s = solution(arr)
